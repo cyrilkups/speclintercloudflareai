@@ -1,0 +1,72 @@
+[
+  {
+    "rule_id": "req-primary-button",
+    "description": "Every screen must contain a clearly styled primary action button.",
+    "type": "presence",
+    "condition": { "component_name": "PrimaryButton" },
+    "severity": "error"
+  },
+  {
+    "rule_id": "text-contrast",
+    "description": "Text elements must have a minimum contrast ratio of 4.5:1 against the background.",
+    "type": "contrast",
+    "condition": { "min_ratio": 4.5 },
+    "severity": "error"
+  },
+  {
+    "rule_id": "font-size-min",
+    "description": "Body text should be at least 14px for readability.",
+    "type": "font_size",
+    "condition": { "min_px": 14 },
+    "severity": "warning"
+  },
+  {
+    "rule_id": "tap-target-size",
+    "description": "Interactive elements must be at least 44x44 pixels for touch accessibility.",
+    "type": "size",
+    "condition": { "min_width": 44, "min_height": 44 },
+    "severity": "warning"
+  },
+  {
+    "rule_id": "missing-label",
+    "description": "All input fields must have associated labels.",
+    "type": "label_presence",
+    "condition": { "target": "input" },
+    "severity": "error"
+  },
+  {
+    "rule_id": "duplicate-cta",
+    "description": "Avoid using the same CTA (e.g., 'Submit') more than once on a screen.",
+    "type": "text_uniqueness",
+    "condition": { "target_text": "Submit" },
+    "severity": "warning"
+  },
+  {
+    "rule_id": "section-header-required",
+    "description": "Sections must include a heading element for clarity.",
+    "type": "presence",
+    "condition": { "text_style": "Heading" },
+    "severity": "warning"
+  },
+  {
+    "rule_id": "platform-ui-guidelines-ios",
+    "description": "Avoid Material Design UI elements in iOS screens.",
+    "type": "platform_compliance",
+    "condition": { "platform": "iOS", "disallowed_components": ["FloatingActionButton", "SnackBar"] },
+    "severity": "error"
+  },
+  {
+    "rule_id": "icon-alt-text",
+    "description": "Icons and images must include alt text or a label for accessibility.",
+    "type": "alt_text",
+    "condition": { "target": "icon" },
+    "severity": "warning"
+  },
+  {
+    "rule_id": "btn-alignment",
+    "description": "Primary action buttons should be aligned consistently (e.g., bottom-right).",
+    "type": "alignment",
+    "condition": { "target": "PrimaryButton", "alignment": "bottom-right" },
+    "severity": "warning"
+  }
+]

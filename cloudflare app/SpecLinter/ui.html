@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SpecLinter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <h1 class="title">SpecLinter</h1>
+      <p class="subtitle">Design Validation Tool</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Rules Section -->
+      <section class="rules-section">
+        <h2 class="section-title">Validation Rules</h2>
+        <div class="rules-input">
+          <textarea 
+            id="rulesTextarea" 
+            placeholder="Paste your validation rules (JSON format) or use default rules..."
+            rows="6"
+          ></textarea>
+          <div class="rules-actions">
+            <button id="loadDefaultRules" class="btn btn-secondary">Load Default Rules</button>
+            <button id="validateRules" class="btn btn-secondary">Validate Rules</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Scan Section -->
+      <section class="scan-section">
+        <div class="scan-info">
+          <p id="selectionInfo" class="selection-info">Select frames or elements to scan</p>
+        </div>
+        <button id="scanButton" class="btn btn-primary" disabled>
+          <span id="scanButtonText">Scan Selection</span>
+          <span id="scanSpinner" class="spinner hidden">⟳</span>
+        </button>
+      </section>
+
+      <!-- Results Section -->
+      <section class="results-section hidden" id="resultsSection">
+        <div class="results-header">
+          <h2 class="section-title">Scan Results</h2>
+          <div class="score-badge" id="scoreBadge">
+            <span class="score-text">Score: </span>
+            <span class="score-value" id="scoreValue">0%</span>
+          </div>
+        </div>
+
+        <!-- Results Summary -->
+        <div class="results-summary">
+          <div class="summary-item summary-passed">
+            <span class="summary-icon">✅</span>
+            <span class="summary-count" id="passedCount">0</span>
+            <span class="summary-label">Passed</span>
+          </div>
+          <div class="summary-item summary-warnings">
+            <span class="summary-icon">⚠️</span>
+            <span class="summary-count" id="warningsCount">0</span>
+            <span class="summary-label">Warnings</span>
+          </div>
+          <div class="summary-item summary-errors">
+            <span class="summary-icon">❌</span>
+            <span class="summary-count" id="errorsCount">0</span>
+            <span class="summary-label">Errors</span>
+          </div>
+        </div>
+
+        <!-- Results List -->
+        <div class="results-list" id="resultsList">
+          <!-- Results will be populated here -->
+        </div>
+
+        <!-- No Issues State -->
+        <div class="no-issues hidden" id="noIssues">
+          <div class="no-issues-icon">🎉</div>
+          <h3>Great work!</h3>
+          <p>No validation issues found in your selection.</p>
+        </div>
+      </section>
+
+      <!-- Error State -->
+      <div class="error-state hidden" id="errorState">
+        <div class="error-icon">⚠️</div>
+        <h3>Scan Error</h3>
+        <p id="errorMessage">An error occurred during scanning.</p>
+        <button id="retryButton" class="btn btn-secondary">Try Again</button>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer-text">Select elements and click scan to validate your design</p>
+    </footer>
+  </div>
+
+  <script src="ui.js"></script>
+</body>
+</html>

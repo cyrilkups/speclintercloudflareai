@@ -1,0 +1,59 @@
+[Violation] Potential permissions policy violation: fullscreen is not allowed in this document.
+vendor-core-772927404841f77b.min.js.br:77 [Sprigma] Sprig SDK is ready
+vendor-core-772927404841f77b.min.js.br:77 Opening file 6Ks8viJKOHKWoUe5E60dzV in a preloaded new tab at /file/6Ks8viJKOHKWoUe5E60dzV with org null
+vendor-core-772927404841f77b.min.js.br:77 Autosave Changes not available or already claimed by another tab undefined
+vendor-core-772927404841f77b.min.js.br:77 [Local fonts] using agent
+vendor-core-772927404841f77b.min.js.br:77 [Fullscreen] Booting... (emscripten version 3.1.65)
+vendor-core-772927404841f77b.min.js.br:77 [GPU] graphicsAPI:"WebGPU", vendor:"Google Inc. (Apple)" renderer:"ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)" deviceArchitecture:"metal-3" deviceDescription:"" webGPUDevice:"" webGPUVendor:"apple"
+vendor-core-772927404841f77b.min.js.br:77 [Fullscreen] Ready in 91.4ms
+vendor-core-772927404841f77b.min.js.br:77 [FullscreenApp] calling setEditorTheme and setting preference dark
+vendor-core-772927404841f77b.min.js.br:77 [MultiplayerSession] connecting to wss://www.figma.com/api/multiplayer/6Ks8viJKOHKWoUe5E60dzV?role=editor&tracking_session_id=AeqpmpH6Hqg0WlFA&version=147&recentReload=0&file-load-streaming-compression&user-id=1466185734736185587&client_release=fd1c38b6b0b7ebd3512fd4b8fe503bff032fd006&clientID=ad479d80c61746bb8413dd9cafe881c1
+vendor-core-772927404841f77b.min.js.br:77 [FullscreenApp] calling setEditorTheme and setting preference dark
+vendor-core-772927404841f77b.min.js.br:77 [MultiplayerSession] Joining file version 87 (initial load)
+vendor-core-772927404841f77b.min.js.br:77 afterJoinEnd PageSyncing: Loaded incrementally Object
+/design/6Ks8viJKOHKWoUe5E60dzV/CS-Project----Dr-Referral--Copy-?node-id=0-1&p=f&t=b4hZWxbWzggeaExI-0:1 Access to image at 'https://www.gravatar.com/avatar/ecc9edfef529bbe48858512670a45000?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_c_v2.png?c=1' from origin 'https://www.figma.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+www.gravatar.com/avatar/ecc9edfef529bbe48858512670a45000?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_c_v2.png?c=1:1 
+            
+            
+           Failed to load resource: net::ERR_FAILED
+vendor-core-772927404841f77b.min.js.br:77 [Fullscreen] loadtime=2.30s maxmem=11747076
+vendor-core-772927404841f77b.min.js.br:77 [Local fonts] using agent
+vendor-core-772927404841f77b.min.js.br:77 [Realtime] Disconnected. Will attempt reconnect in 4 seconds.
+vendor-core-772927404841f77b.min.js.br:77 [Realtime] Attempting reconnect now after waiting 4 seconds.
+vendor-core-772927404841f77b.min.js.br:77 [Realtime] Attempting reconnect due to page visibility change.
+vendor-core-772927404841f77b.min.js.br:77 [MultiplayerSession] connecting to wss://www.figma.com/api/multiplayer/6Ks8viJKOHKWoUe5E60dzV?role=editor&tracking_session_id=AeqpmpH6Hqg0WlFA&version=147&recentReload=0&file-load-streaming-compression=&scenegraph-queries-initial-nodes=0%3A1&user-id=1466185734736185587&client_release=fd1c38b6b0b7ebd3512fd4b8fe503bff032fd006&clientID=ad479d80c61746bb8413dd9cafe881c1&reconnect-key=245ad7760bb7eb807b18bb994b900c4e1f2ea513&reconnect-sequence-number=7437&initialFileVersion=87&previousLoadMode=incremental&incremental-loading-validation=0
+vendor-core-772927404841f77b.min.js.br:77 [Realtime] Connected to wss://www.figma.com/api/realtime_v2?release_git_tag=release-2025-07-25&user_id=1466185734736185587.
+vendor-core-772927404841f77b.min.js.br:77 [MultiplayerSession] Joining file version 87 (skip_reload reconnect)
+vendor-core-772927404841f77b.min.js.br:77 afterJoinEnd PageSyncing: Loaded incrementally Object
+/design/6Ks8viJKOHKWoUe5E60dzV/CS-Project----Dr-Referral--Copy-?node-id=0-1&p=f&viewport=356%2C295%2C0.07&t=b4hZWxbWzggeaExI-0:1 Access to image at 'https://www.gravatar.com/avatar/ecc9edfef529bbe48858512670a45000?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_c_v2.png?c=1' from origin 'https://www.figma.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+www.gravatar.com/avatar/ecc9edfef529bbe48858512670a45000?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_c_v2.png?c=1:1 
+            
+            
+           Failed to load resource: net::ERR_FAILED
+vendor-core-772927404841f77b.min.js.br:77 [Realtime] Disconnected. Will attempt reconnect in 4 seconds.
+vendor-core-772927404841f77b.min.js.br:77 [Realtime] Attempting reconnect now after waiting 4 seconds.
+vendor-core-772927404841f77b.min.js.br:77 [Realtime] Attempting reconnect due to page visibility change.
+vendor-core-772927404841f77b.min.js.br:77 [MultiplayerSession] connecting to wss://www.figma.com/api/multiplayer/6Ks8viJKOHKWoUe5E60dzV?role=editor&tracking_session_id=AeqpmpH6Hqg0WlFA&version=147&recentReload=0&file-load-streaming-compression=&scenegraph-queries-initial-nodes=0%3A1&user-id=1466185734736185587&client_release=fd1c38b6b0b7ebd3512fd4b8fe503bff032fd006&clientID=ad479d80c61746bb8413dd9cafe881c1&reconnect-key=245ad7760bb7eb807b18bb994b900c4e1f2ea513&reconnect-sequence-number=7437&initialFileVersion=87&previousLoadMode=incremental&incremental-loading-validation=0
+vendor-core-772927404841f77b.min.js.br:77 [Realtime] Connected to wss://www.figma.com/api/realtime_v2?release_git_tag=release-2025-07-25&user_id=1466185734736185587.
+vendor-core-772927404841f77b.min.js.br:77 [MultiplayerSession] Joining file version 87 (skip_reload reconnect)
+vendor-core-772927404841f77b.min.js.br:77 afterJoinEnd PageSyncing: Loaded incrementally Object
+/design/6Ks8viJKOHKWoUe5E60dzV/CS-Project----Dr-Referral--Copy-?node-id=0-1&p=f&viewport=356%2C295%2C0.07&t=b4hZWxbWzggeaExI-0:1 Access to image at 'https://www.gravatar.com/avatar/ecc9edfef529bbe48858512670a45000?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_c_v2.png?c=1' from origin 'https://www.figma.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+www.gravatar.com/avatar/ecc9edfef529bbe48858512670a45000?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_c_v2.png?c=1:1 
+            
+            
+           Failed to load resource: net::ERR_FAILED
+3vendor-core-772927404841f77b.min.js.br:77 [Local fonts] using agent
+vendor-core-772927404841f77b.min.js.br:77 Error: Unable to load code: Error: Error invoking remote method 'web:getLocalFileExtensionSource': Error: ENOENT: no such file or directory, lstat '/Users/cyrilkups/Desktop/Projects /SpecLintCheck/code.js'
+    at ef (figma_app-728359fe9f278917.min.js.br:68:317880)
+    at async 5074-1aa3b5c268601c81.min.js.br:750:6025
+    at async Promise.all (/design/6Ks8viJKOHKWoUe5E60dzV/index 0)
+    at async el (5074-1aa3b5c268601c81.min.js.br:750:5996)
+    at async 5074-1aa3b5c268601c81.min.js.br:750:3552
+(anonymous) @ vendor-core-772927404841f77b.min.js.br:77
+vendor-core-772927404841f77b.min.js.br:77 [jsvm-cpp] main called (emscripten version 2.0.31)
+[Violation] Potential permissions policy violation: camera is not allowed in this document.
+[Violation] Potential permissions policy violation: microphone is not allowed in this document.
+[Violation] Potential permissions policy violation: clipboard-write is not allowed in this document.
+[Violation] Potential permissions policy violation: display-capture is not allowed in this document.
+[Violation] Potential permissions policy violation: camera is not allowed in this document.
+[Violation] Potential permissions policy violation: microphone is not allowed in this document.

@@ -1,0 +1,10 @@
+# Wrangler needs a `main` entry pointing to the Worker entry file.
+# This config tells Wrangler which file to load as the Worker and
+# prevents treating the project as a static Pages site. Keep this
+# file minimal for a pure Worker deployment.
+name = "kupcloudflareai"
+main = "src/worker.js"
+compatibility_date = "2025-11-08"
+
+# Note: No `[site]` section is present — this is a pure Worker
+# deployment, not a Cloudflare Pages static site.

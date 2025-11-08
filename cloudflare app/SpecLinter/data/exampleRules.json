@@ -1,0 +1,119 @@
+{
+  "name": "Default SpecLinter Rules",
+  "version": "1.0.0",
+  "description": "Standard validation rules for design compliance and accessibility",
+  "rules": [
+    {
+      "id": "min-font-size",
+      "description": "Text must be at least 12px for readability",
+      "type": "font-size",
+      "condition": {
+        "minSize": 12
+      },
+      "severity": "error",
+      "category": "accessibility"
+    },
+    {
+      "id": "max-font-size",
+      "description": "Heading text should not exceed 72px",
+      "type": "font-size",
+      "condition": {
+        "maxSize": 72
+      },
+      "severity": "warning",
+      "category": "design-system"
+    },
+    {
+      "id": "color-contrast-aa",
+      "description": "Text must meet WCAG AA contrast requirements (4.5:1)",
+      "type": "color-contrast",
+      "condition": {
+        "minContrast": 4.5,
+        "standard": "AA"
+      },
+      "severity": "error",
+      "category": "accessibility"
+    },
+    {
+      "id": "required-cta",
+      "description": "Call-to-action element must be present",
+      "type": "required-text",
+      "condition": {
+        "text": "button",
+        "caseSensitive": false
+      },
+      "severity": "error",
+      "category": "user-experience"
+    },
+    {
+      "id": "image-alt-text",
+      "description": "Images should have descriptive names for accessibility",
+      "type": "image-alt",
+      "condition": {},
+      "severity": "warning",
+      "category": "accessibility"
+    },
+    {
+      "id": "button-min-size",
+      "description": "Interactive elements should be at least 44x44px (WCAG 2.5.5)",
+      "type": "min-touch-target",
+      "condition": {
+        "minWidth": 44,
+        "minHeight": 44
+      },
+      "severity": "warning",
+      "category": "accessibility"
+    },
+    {
+      "id": "consistent-spacing",
+      "description": "Maintain consistent spacing between elements (8px grid)",
+      "type": "spacing",
+      "condition": {
+        "gridSize": 8,
+        "tolerance": 2
+      },
+      "severity": "warning",
+      "category": "design-system"
+    },
+    {
+      "id": "brand-colors",
+      "description": "Use approved brand colors only",
+      "type": "color-palette",
+      "condition": {
+        "approvedColors": [
+          "#0066cc",
+          "#28a745",
+          "#ffc107",
+          "#dc3545",
+          "#6c757d",
+          "#ffffff",
+          "#000000"
+        ]
+      },
+      "severity": "warning",
+      "category": "brand"
+    }
+  ],
+  "categories": {
+    "accessibility": {
+      "name": "Accessibility",
+      "description": "WCAG compliance and inclusive design",
+      "priority": "high"
+    },
+    "design-system": {
+      "name": "Design System",
+      "description": "Consistency with design system guidelines",
+      "priority": "medium"
+    },
+    "user-experience": {
+      "name": "User Experience",
+      "description": "Usability and interaction design",
+      "priority": "high"
+    },
+    "brand": {
+      "name": "Brand Guidelines",
+      "description": "Brand consistency and visual identity",
+      "priority": "medium"
+    }
+  }
+}

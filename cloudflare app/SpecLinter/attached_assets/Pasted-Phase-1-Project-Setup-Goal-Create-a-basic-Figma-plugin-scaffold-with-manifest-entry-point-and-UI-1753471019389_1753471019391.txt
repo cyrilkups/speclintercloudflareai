@@ -1,0 +1,122 @@
+Phase 1: Project Setup
+Goal: Create a basic Figma plugin scaffold with manifest, entry point, and UI.
+
+Prompt for Replit:
+"Generate a boilerplate Figma plugin project with TypeScript, including manifest.json, code.ts, ui.html, and ui.ts. Use Vite or a simple bundler. Ensure manifest.json includes a name (SpecLinter), id, main (code.ts), and ui (ui.html). Include minimal CSS styling for a clean panel."
+
+Checklist:
+
+manifest.json with name, id, and correct api_version.
+
+code.ts with figma.showUI call.
+
+ui.html basic interface (header + “Scan” button).
+
+ui.ts sends events to plugin code.
+
+Phase 2: Rule Input System
+Goal: Allow users to paste JSON/Markdown rules.
+
+Prompt for Replit:
+"Add a rules input section in ui.html (textarea + upload button). Parse uploaded JSON or Markdown into a JavaScript object. Validate structure: each rule should have id, description, type, and condition. Provide error handling if parsing fails."
+
+Checklist:
+
+UI for pasting/uploading rules.
+
+Basic exampleRules.json in data/.
+
+Parsing and validation logic.
+
+Phase 3: Lint Engine Core
+Goal: Implement the linting logic.
+
+Prompt for Replit:
+"Create lintEngine.ts to scan all selected frames in Figma and check for rule compliance. Start with rules: (1) Required text element exists, (2) Font size > 12px, (3) Color contrast > 4.5:1. Highlight failing elements in the report."
+
+Checklist:
+
+Use Figma Plugin API: figma.currentPage.selection.
+
+Detect text nodes and font sizes.
+
+Implement contrastCheck.ts for WCAG compliance.
+
+Phase 4: Lint Report UI
+Goal: Display a visual report with passes, warnings, and errors.
+
+Prompt for Replit:
+"Update ui.ts and ui.html to display a scrollable lint report. For each rule: show an icon (✅/⚠️/❌), rule description, and link to select the failing layer in Figma when clicked."
+
+Checklist:
+
+Report dynamically updates after scan.
+
+Clicking a rule highlights the Figma node (figma.viewport.scrollAndZoomIntoView).
+
+Clear empty-state message when no issues are found.
+
+Phase 5: Custom Rule Templates
+Goal: Enable saving and loading rule sets.
+
+Prompt for Replit:
+"Add functionality to save rule sets to localStorage. Include a dropdown to load saved templates (e.g., 'Mobile Checkout Rules'). Add Save/Delete buttons for templates."
+
+Checklist:
+
+Save rules as JSON strings.
+
+Dropdown UI for switching templates.
+
+Phase 6: Design Readiness Score
+Goal: Show a summary score.
+
+Prompt for Replit:
+"Add a readiness score that calculates (passed rules ÷ total rules × 100). Display the score at the top of the report as a progress bar or badge."
+
+Phase 7: Styling Polish
+Goal: Improve UI look and feel.
+
+Prompt for Replit:
+"Add minimal but clean styling using CSS (or Tailwind if integrated). Ensure the plugin has a light/dark friendly design, icons for states, and tooltips for rules. Use a grid layout for readability."
+
+Phase 8: Export Report
+Goal: Allow exporting report results.
+
+Prompt for Replit:
+"Add a button to export the lint report as JSON or PDF. For JSON: use Blob + URL.createObjectURL. For PDF: use jsPDF library."
+
+Phase 9: Testing & Debugging
+Goal: Ensure reliability.
+
+Prompt for Replit:
+"Write test cases (Jest or simple scripts) for lintEngine.ts and contrastCheck.ts. Test on sample Figma files to ensure correct scanning and reporting."
+
+Phase 10: Final Publish Prep
+Goal: Prepare for Figma Community.
+
+Prompt for Replit:
+"Generate the final manifest.json, icons (128x128), and cover image (800x400). Write a README with usage instructions. Ensure the plugin compiles to a single dist folder for Figma upload."
+
+Tech Stack Recap
+Core: TypeScript + Figma Plugin API
+
+Bundler: Vite (or Webpack)
+
+Styling: CSS (optionally Tailwind)
+
+Testing: Jest (for logic modules)
+
+Optional: jsPDF for report exports, OpenAI API for future AI features
+
+Would you like me to write the exact initial Replit prompt (copy-paste ready) that will create the full boilerplate (manifest + code + UI) for SpecLinter in one go?
+
+
+
+
+
+
+
+
+
+You said:
